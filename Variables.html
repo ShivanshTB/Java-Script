@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+</head>
+
+<body>
+    <h1>Variables in java script</h1>
+    <h3>Open dev console</h3>
+    <p>Variables are used to store information/data.</p>
+    <ul>
+        <li>let</li>
+        <span>In other words, declare. Let is only used in modren browser not in old one's.</span>
+        <li>Constant</li>
+        <span>Connot be reassigned</span>
+        <li>var</li>
+        <span>Same as let but old school</span>
+    </ul>
+    <script>
+        let message;
+        message = "Hello World!"; //store value in message variable
+        console.log(message)
+
+        var message2 = "In this value is assign at the time of declaration";
+        console.log(message2);
+        //multiples variable declre in one line
+        // let user="Shivansh", age="21";
+
+        let Message = "Java script is case sensitive";
+        console.log(Message);
+        //vaiable declared without let
+        num = "3";
+        console.log("Variable is created without let and store value ", num);
+
+        // const myBirthday = '18.04.1982';
+        // error, can't reassign the constant!
+        // myBirthday = '01.01.2001'; 
+
+        const COLOR_RED = "red";
+        const COLOR_GREEN = "green";
+        const COLOR_BLUE = "blue";
+        const COLOR_ORANGE = "orange";
+        //need to pick a color
+        let color = COLOR_RED;
+        console.log(color);
+
+        //Declare two variables: admin and name.
+        // Assign the value "John" to name.
+        // Copy the value from name to admin.
+        // Show the value of admin using alert (must output “John”).
+        var name = "Shivansh Sharma";
+        var admin = name;
+        console.log(admin);
+    </script>
+</body>
+
+</html>
