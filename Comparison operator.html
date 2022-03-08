@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparison Operators</title>
+</head>
+
+<body>
+    <h1>Comparison Operators</h1>
+    <h4>Open dev console</h4>
+    <ul>
+        <!-- equal -->
+        <li>==</li>
+
+        <!-- equal value and equal type -->
+        <li>===</li>
+
+        <!-- not equal -->
+        <li>!=</li>
+
+        <!-- not equall value or not equal type -->
+        <li>!==</li>
+
+        <!-- greater than -->
+        <li>></li>
+
+        <!-- less than -->
+        <li>
+            << /li>
+                <!-- greater than or equal to -->
+        <li>>=</li>
+
+        <!-- less than or equal to -->
+        <li>
+            <= < /li>
+                <!-- ternary -->
+        <li>?</li>
+    </ul>
+    <script>
+        // equal
+        var num = 5;
+        console.log(num == 5);
+        //equal value and equal type
+        console.log(num === '5');
+        //not equal
+        console.log(num != 10);
+        // not equall value or not equal type
+        console.log(num !== 5);
+        // greater than
+        console.log(num > 2);
+        // less than
+        console.log(num < 2);
+        //greater than or equal to
+        console.log(num >= 5);
+        //less than or equal to
+        console.log(num < 2);
+        //ternary
+        let marks = prompt('Enter your marks :');
+        let result = (marks >= 40) ? 'pass' : 'fail';
+        console.log(`You ${result} the exam.`);
+
+
+    </script>
+</body>
+
+</html>
