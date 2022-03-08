@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertion</title>
+</head>
+
+<body>
+    <h1>Conversion</h1>
+    <p>Use to convert data type into another data type</p>
+    <ul>
+        <li>Converting Strings to Numbers</li>
+        <li>Converting Numbers to Strings</li>
+        <li>Converting Dates to Numbers</li>
+        <li>Converting Booleans to Numbers</li>
+        <li>Converting Numbers to Booleans</li>
+    </ul>
+
+    <script>
+        //string to number
+        var a="123";
+        console.log("Before conversion: ",typeof(a));
+        a = Number(a);
+        console.log("After conversion: ",typeof(a));
+        //number into string
+        var b=123;
+        console.log("Before conversion: ",typeof(b));
+        b = String(b);
+        console.log("After conversion: ",typeof(b));
+        //date into number
+        var c = new Date();
+        console.log(c)
+        console.log("Before conversion: ",typeof(c));
+        c = c.getTime();
+        console.log(c)
+        c = Number(c);
+        console.log("After conversion: ",typeof(c));
+        //boolean to number
+        var d=true;
+        console.log("Before conversion: ",typeof(d));
+        d = Number(d);
+        console.log("After conversion: ",typeof(d));
+        //number to boolean
+        var e=0;
+        console.log("Before conversion: ",typeof(e));
+        e = Boolean(e);
+        // console.log(e)
+        console.log("After conversion: ",typeof(e));
+    </script>
+
+</body>
+</html>
