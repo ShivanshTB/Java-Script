@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+
+<body>
+    <h1>Function</h1>
+    <p>Functions are the main “building blocks” of the program. They allow the code to be called many times without
+        repetition.</p>
+    <script>
+        function greeting() {
+            alert("Good Morning!");
+        }
+        greeting();
+
+        function showMessage(text) {
+            alert(text);
+        }
+        showMessage("Let's learn function.");
+
+        function text(a) {
+            a = '"' + a + '"';
+            alert(a);
+        }
+        // text("Hello")
+
+        function show(from, text = "no text given") {
+            alert(from + ": " + text);
+        }
+        // show("Shivansh");
+
+        function Message(text) {
+            if (text === undefined) { // if the parameter is missing
+                text = 'Empty message';
+            }
+            alert(text);
+        }
+        // Message();
+
+        function showCount(count) {
+            // if count is undefined or null, show "unknown"
+            alert(count ?? "unknown");
+        }
+        // showCount(0); 
+        // showCount(null); 
+        // showCount();    
+        // showCount(7);
+        // showCount(undefined);    
+
+        function sum(a, b) {
+            return a + b;
+        }
+        let result = sum(2, 2);
+        // alert(result);
+
+        // function checkAge(age) {
+        //     if (age >= 18) {
+        //         return true;
+        //     } else {
+        //         return confirm('Do you have permission from your parents?');
+        //     }
+        // }
+        // let age = prompt('How old are you?', 18);
+        // if (checkAge(age)) {
+        //     alert('Access granted');
+        // } else {
+        //     alert('Access denied');
+        // }
+
+        
+    </script>
+</body>
+
+</html>
