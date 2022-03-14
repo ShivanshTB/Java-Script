@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+
+<body>
+    <h1>Object</h1>
+    <ul>
+        <li>We can use reserved word like "let","var"."return",etc.</li>
+        <li>Please note that on the left side of in there must be a property name. That’s usually a quoted string.</li>
+    </ul>
+    <script>
+        let user = {    //user is object
+            //name and age is property 
+            name: "Shivansh",
+            age: 22,
+            // shivansh and 22 are valuess
+            //multi word must be in quoted
+            "like birds": true,
+        };
+        console.log(user.name);
+        console.log(user.age);
+        // alert(user.name);
+        //add
+        user.isAdmin = true;
+        console.log(user);
+        //remove
+        delete user.age;
+        console.log(user);
+        //square bracet
+        let users = {};
+        users["likes animal"] = true;
+        // delete
+        delete users["likes animal"];
+        console.log(users);
+        //alter
+        let key = "likes dogs";
+        user[key] = true;
+        console.log(user);
+        //function
+        function makeUser(name, age) {
+            return {
+                name,   //name: name
+                age,    //age: age
+            };
+        }
+        let qwerty = makeUser("Sunny", 21);
+        // alert(qwerty.name);
+        console.log(makeUser);  //show only property names
+        console.log(qwerty);    //show complete data
+
+        //we can use reserved word as property in object
+        let obj = {
+            for: 1,
+            let: 2,
+            return: 3
+        };
+        console.log(obj.for + obj.let + obj.return);
+        //property existence test "in"
+        let info = { name: "John", age: 30 };
+        console.log("age" in info);
+        console.log("blabla" in info);
+        //"in" in loop
+        let userr = {
+            name: "Shivansh",
+            age: 30,
+            isAdmin: true
+        };
+        for (let key in userr) {
+            // keys
+            console.log(key);
+            console.log(userr[key]); 
+        }
+    </script>
+</body>
+
+</html>
