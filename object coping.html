@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object copying</title>
+</head>
+
+<body>
+    <h1>Object references and copying</h1>
+    <h4>Open dev console</h4>
+    <script>
+        let message = "Hello, My name is Shivansh Sharma";
+        let phrase = message;
+        console.log(phrase);
+
+        let user = { name: 'John' };
+        console.log(user.name);
+        let admin = user;
+        admin.name = 'Pete';
+        console.log(user.name);
+
+        let info = {
+            name: "John",
+            age: 30
+        };
+        let clone = {};
+        for (let key in info) {
+            clone[key] = info[key];
+        }
+        clone.name = "Pete";
+        console.log(info.name);
+        console.log(clone.name);
+
+        let userr = { name: "John" };
+        let permissions1 = { canView: true };
+        let permissions2 = { canEdit: true };
+        // copies all properties from permissions1 and permissions2 into user
+        Object.assign(userr, permissions1, permissions2);
+        console.log(userr)
+
+        let usser = {
+            name: "Shivansh",
+            sizes: {
+                height: 182,
+                width: 50
+            }
+        };
+        let clones = Object.assign({}, usser);
+        // let clones = usser;
+        // alert(usser.sizes === clone.sizes);
+        usser.sizes.width++;      
+        console.log(clones.sizes.width); 
+    </script>
+</body>
+
+</html>
