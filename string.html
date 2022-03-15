@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+</head>
+
+<body>
+    <h1>String</h1>
+    <h4>Open dev console</h4>
+    <script>
+        function sum(a, b) {
+            return a + b;
+        }
+        console.log(`1 + 2 = ${sum(1, 2)}`);
+
+        let guestList = `Guests:John
+  Pete
+  Mary`;
+        console.log(guestList);
+
+        let str1 = "Hello World"
+        let str2 = `Hello
+World`;
+        console.log(str1 == str2);
+
+        let str = `Hello`;
+        console.log(str.length);
+        console.log(str[1]);
+        console.log(str.charAt(1));
+        console.log(str[str.length - 3]);
+
+        let strr = 'Hi';
+        strr[0] = 'h';
+        console.log(strr[0]);
+
+        let sttr = 'Hi';
+        sttr = 'h' + sttr[1];
+        console.log(sttr);
+
+    </script>
+</body>
+
+</html>
