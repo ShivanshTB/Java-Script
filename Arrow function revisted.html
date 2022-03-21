@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow function revisited</title>
+</head>
+
+<body>
+    <h1>Arrow function revisited</h1>
+    <h4>Open dev console</h4>
+    <script>
+        let group = {
+            title: "Our Group",
+            students: ["Shivansh", "Sunny", "Sharma"],
+            showList() {
+                this.students.forEach(
+                    student => console.log(this.title + ': ' + student)
+                );
+            }
+        };
+        group.showList();
+
+    </script>
+</body>
+
+</html>
