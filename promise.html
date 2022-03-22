@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise</title>
+</head>
+
+<body>
+    <h1>Promise</h1>
+    <h4>Open dev console</h4>
+    <script>
+        let promise = new Promise(function (resolve, reject) {
+            setTimeout(() => resolve("done!"), 1000);
+        });
+        promise.then(
+            result => console.log(result),
+            error => console.log(error)
+        );
+
+        let promisee = new Promise(function (resolve, reject) {
+            setTimeout(() => reject(new Error("Whoops!")), 1000);
+        });
+        promisee.then(
+            result => console.log(result),
+            error => console.log(error) 
+        );
+    </script>
+</body>
+
+</html>
