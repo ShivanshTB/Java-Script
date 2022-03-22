@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise error</title>
+</head>
+<body>
+    <h1>Error handling with promise</h1>
+    <h4>Open dev console</h4>
+    <script>
+        function func1() {
+    return new Promise(function (resolve, reject) {
+        setTimeout (() => {
+            const error = true;
+           if (!error) {
+                console.log('Your promise has been resolved')
+                resolve();
+           }
+            else {
+                console.log('Your promise has not been resolved')
+                reject('Sorry not fulfilled');
+            }
+       }, 2000);
+    }) 
+}
+func1(). then(function(){
+    console.log (" Thanks for resolving")
+}).catch(function(error){
+    console.log(" Very bad. Reason: "+ error)
+})  
+    </script>
+</body>
+</html>
