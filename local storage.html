@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+</head>
+
+<body>
+    <h1>Local Storage</h1>
+    <script>
+       localStorage.setItem('Shivansh', 12000);
+        console.log(localStorage.getItem('Shivansh'));
+        localStorage.setItem('Sunny', 22000);
+        console.log(localStorage.getItem('Sunny'));
+        localStorage.setItem('Vijay', 23000);
+        console.log(localStorage.getItem('Vijay'));
+        localStorage.setItem('Sukhvir', 30000);
+        console.log(localStorage.getItem('Sukhvir'));
+        localStorage.setItem('Gurjant', 45000);
+        console.log(localStorage.getItem('Gurjant'));
+        localStorage.setItem('Sandeep', 55000);
+        console.log(localStorage.getItem('Sandeep'));
+
+        localStorage.removeItem('Vijay');
+
+        console.log(localStorage.key(2))
+
+        console.log(localStorage.length);
+
+        for (let i = 0; i < localStorage.length; i++) {
+            let key = localStorage.key(i);
+            console.log(`${key}: ${localStorage.getItem(key)}`);
+        }
+        console.log(localStorage.hasOwnProperty(2)); 
+    </script>
+</body>
+
+</html>
